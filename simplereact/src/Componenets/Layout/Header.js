@@ -5,7 +5,7 @@ const Header = () => {
 
   return (
 
-    <nav className=" navbar navbar-expand-lg navbar-dark bg-primary ">
+    <nav className=" navbar navbar-expand-lg navbar-dark bg-secondary ">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
       React App
