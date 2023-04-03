@@ -1,6 +1,8 @@
 import react from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
+
 
 const Home = () =>{
     const [users,setUsers] = useState([]);
@@ -33,6 +35,11 @@ const Home = () =>{
    <td>{user.name}</td>
    <td>{user.username}</td>
    <td>{user.email}</td>
+   <td>
+    <Link className="btn btn-primary m-2"> <i class="fa-solid fa-eye"></i></Link>
+    <Link  className="btn btn-outline-primary m-2">Edit</Link>
+    <Link  className="btn btn-danger-primary m-2" >Delete</Link>
+   </td>
     </tr>
    ))}
    
